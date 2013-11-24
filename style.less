@@ -1,0 +1,458 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: #f4f4f5;
+	height: 100%;
+	font-family: "proxima-nova", Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 52px;
+	font-weight: normal;
+	margin: 0 auto 40px auto;
+	line-height: 54px;
+	width: 760px;
+	text-align: center;
+	color: #fff;
+}
+
+h2 {
+	font-size: 24px;
+	float: left;
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 0px;
+	font-weight: normal;
+}
+
+p {
+	margin: 0px;
+	padding: 0 0 15px 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+a {
+	color: #65c4e3;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #2c82a8;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+#top-nav {
+	background: #000;
+	height: 50px;
+	float: left;
+	width: 100%;
+}
+
+#logo {
+	float: left;
+	margin: 20px 0 0 0;
+	a {
+		display: block;
+		width: 137px;
+		height: 11px;
+		background: url(../images/logo@2x.png) no-repeat;
+		background-size: 137px 11px;
+		text-indent: -99999px;
+	}
+}
+
+#navigation {
+	float: right;
+	margin: 17px 0 0 0;
+	ul {
+		margin: 0px;
+		padding: 0px;
+		li {
+			list-style-type: none;
+			float: left;
+			margin: 0 0 0 35px;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			a {
+				color: #868686;
+				text-decoration: none;
+			}
+			a:hover {
+				color: #626262;
+			}
+		}
+		.current {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+#hero {
+	float: left;
+	width: 100%;
+	background: url(../images/bg-hero.jpg) repeat;
+	padding: 115px 0;
+}
+
+#sub-headline {
+	font-size: 24px;
+	color: #fff;
+	line-height: 36px;
+	text-align: center;
+	width: 760px;
+	margin: 0 auto;
+}
+
+#down-arrow {
+	background: url(../images/downarrow@2x.png) no-repeat;
+	width: 70px;
+	height: 70px;
+	background-size: 70px 70px;
+	display: block;
+	text-indent: -999999px;
+	margin: 75px auto 0 auto;
+	display: table;
+	cursor: pointer;
+}
+
+#projects {
+	float: left;
+	width: 100%;
+	margin: -50px 0 0 0;
+}
+
+.indiv-project {
+	float: left;
+	width: 350px;
+	height: 435px;
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #fff; /* layer fill content */
+	-moz-box-shadow: 0 0 5px rgba(0,1,1,.1); /* drop shadow */
+	-webkit-box-shadow: 0 0 5px rgba(0,1,1,.1); /* drop shadow */
+	box-shadow: 0 0 5px rgba(0,1,1,.1); /* drop shadow */
+	margin: 0 45px 45px 0;
+	position: relative;
+	img {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-topright: 5px;
+		float: left;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.project-title {
+	float: left;
+	width: 100%;
+	font-weight: 700;
+	color: #fff;
+	top: 0;
+	position: absolute;
+	height: 251px;
+	text-align: center;
+	font-size: 36px;
+	display: table;
+	line-height: 36px;
+	span {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	a:hover {
+		opacity: .6;
+	}
+}
+
+.project-type {
+	float: left;
+	top: 190px;
+	position: absolute;
+	span {
+		background: rgba(0, 0, 0, .2);
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		padding: 5px 10px 6px 15px;
+		float: left;
+	}
+	img {
+		float: left;
+		width: 11px;
+		height: 28px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-topright: 0px;
+	}
+}
+
+.project-info {
+	float: left;
+	width: 100%;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.view-project {
+	color: #65c4e3;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	background: url(../images/ico-git.png) no-repeat 0px 0px;
+	padding: 3px 0 0 35px;
+	display: block;
+	float: left;
+	position: absolute;
+	bottom: 30px;
+}
+
+.view-project:hover {
+	color: #2c82a8;
+	background: url(../images/ico-git.png) no-repeat 0px -21px;
+}
+
+.indiv-project:nth-child(3n+3) {
+	margin: 0 0 40px 0;
+}
+
+#cartman {
+	.project-type {
+		color: #6d6e71;
+	}
+}
+
+#notably {
+	.project-type {
+		color: #61e5bb;
+	}
+}
+
+#fabric {
+	.project-type {
+		color: #c64c25;
+	}
+}
+
+#livelinks {
+	.project-type {
+		color: #9576a4;
+	}
+}
+
+#topicemailer {
+	.project-type {
+		color: #bbb932;
+	}
+}
+
+#looking {
+	background: none;
+	-moz-box-shadow: none; /* drop shadow */
+	-webkit-box-shadow: none; /* drop shadow */
+	box-shadow: none; /* drop shadow */
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#footer {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 75px 0;
+	color: #a7a9ac;
+	span {
+		color: #bcbec0;
+	}
+}
+
+@media all and (max-width: 1140px) and (min-width: 768px) {
+	.container {
+		width: 730px;
+	}
+
+	#hero {
+		padding: 75px 0 115px 0;
+	}
+
+	h1 {
+		font-size: 44px;
+		width: 650px;
+		line-height: 50px;
+		margin: 0 auto 40px auto;
+	}
+
+	#sub-headline {
+		font-size: 18px;
+		line-height: 30px;
+		width: 650px;
+	}
+
+	#down-arrow {
+		width: 52px;
+		height: 52px;
+		background-size: 52px 52px;
+		margin: 50px auto 0 auto;
+	}
+
+	.indiv-project {
+		margin: 0 30px 30px 0;
+	}
+
+	.indiv-project:nth-child(2n+2) {
+		margin: 0 0 30px 0;
+	}
+
+	.indiv-project:nth-child(3n+3) {
+		margin: 0 30px 30px 0;
+	}
+
+	.indiv-project:last-child {
+		margin-right: 0px;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 320px) {
+	.container {
+		width: 275px;
+	}
+
+	#top-nav {
+		height: auto;
+		padding: 0 0 20px 0;
+	}
+
+	#logo {
+		width: 100%;
+		a {
+			margin: 0 auto;
+			display: table;
+		}
+	}
+
+	#navigation {
+		width: 100%;
+		margin: 10px 0 0 0;
+		ul {
+			margin: 0 auto;
+			display: table;
+			li:first-child {
+				margin: 0px;
+			}
+		}
+	}
+
+	#hero {
+		padding: 50px 0 75px 0;
+	}
+
+	h1 {
+		font-size: 24px;
+		width: 100%;
+		line-height: 27px;
+		margin: 0 auto 30px auto;
+	}
+
+	h2 {
+		font-size: 16px;
+		margin: 0 0 15px 0;
+	}
+
+	#sub-headline {
+		font-size: 14px;
+		line-height: 18px;
+		width: 100%;
+	}
+
+	#down-arrow {
+		width: 37px;
+		height: 37px;
+		background-size: 37px 37px;
+		margin: 30px auto 0 auto;
+	}
+
+	.indiv-project {
+		width: 100%;
+		margin: 0 0 20px 0 !important;
+		height: 360px;
+	}
+
+	.project-title {
+		height: 197px;
+		font-size: 27px;
+		line-height: 27px;
+	}
+
+	.project-info {
+		padding: 30px 30px 20px 30px;
+		p {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+
+	.project-type {
+		top: 145px;
+		span {
+			font-size: 11px;
+			padding: 5px 10px 5px 12px;
+		}
+		img {
+			height: 23px;
+			width: auto;
+		}
+	}
+
+	.view-project {
+		font-size: 11px;
+		background: url(../images/ico-git-mobile.png) no-repeat;
+		padding: 2px 0 1px 28px;
+	}
+
+	.view-project:hover {
+		background: url(../images/ico-git-mobile.png) no-repeat 0 -17px;
+	}
+
+	#looking {
+		height: 180px;
+		padding: 20px;
+		p {
+			font-size: 13px;
+			line-height: 18px;
+		}
+	}
+
+	#footer {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
